@@ -3,7 +3,7 @@ export const projects = [
     title: "Reserva",
     description:
       "A beauty-focused booking platform that lets clients easily discover service providers, choose a specific service, and book appointments seamlessly in one flow..",
-    image: "/assets/reserva.jpg",
+    image: "/assets/reserva2.jpg",
     stack: ["React + TypeScript", "Tailwind CSS", "Firebase"],
     gitHub: "https://github.com/ojaraa/reserva",
     projectLink: "https://reserva-kappa.vercel.app",
@@ -12,7 +12,7 @@ export const projects = [
     title: "Movie Discovery (TMDB)",
     description:
       "A responsive movie discovery web app built with the TMDB API, allowing users to browse trending movies, view detailed movie information, and explore cast details. ",
-    image: "/assets/tmdb.jpg",
+    image: "/assets/tmdb2.jpg",
     stack: ["React + TypeScript", "Tailwind CSS", "tmdb"],
     gitHub: " https://github.com/ojaraa/tmdb-movie-discovery-app",
     projectLink: "https://tmdb-movie-discovery.netlify.app",
