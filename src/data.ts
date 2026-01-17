@@ -6,7 +6,7 @@ export const projects = [
     image: "/assets/reserva.jpg",
     stack: ["React + TypeScript", "Tailwind CSS", "Firebase"],
     gitHub: "https://github.com/ojaraa/reserva",
-    projectLink: "https://reserva-kappaa.vercel.app",
+    projectLink: "https://reserva-kappa.vercel.app",
   },
   {
     title: "Movie Discovery (TMDB)",
