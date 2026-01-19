@@ -1,13 +1,12 @@
 import { MdOutlineMail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import { LiaGithub } from "react-icons/lia";
 import { FaCircleCheck, FaSquareXTwitter } from "react-icons/fa6";
 import { TbFileDownload } from "react-icons/tb";
-// import { Link } from "react-router";
-// import { projects } from "../data";
 import Footer from "../components/Footer";
 import ProjectsSection from "../components/ProjectsSection";
 import { experience } from "../data";
+import resume from "/Okereke_Favour_Ojara_Resume.pdf";
+import { motion } from "motion/react";
 
 const Home = () => {
   return (
@@ -35,9 +34,14 @@ const Home = () => {
                 </div>
               </div>
               <div>
-                <h1 className="text-4xl font-bold tracking-tight">
+                <motion.h1
+                  className="text-4xl font-bold tracking-tight"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeIn" }}
+                >
                   Okereke Favour Ojara
-                </h1>
+                </motion.h1>
                 <p className="text-xl text-[#94A3B8] mt-1">
                   Frontend Developer
                 </p>
@@ -45,17 +49,23 @@ const Home = () => {
             </div>
 
             <div className="flex gap-3 pb-2">
-              <button className="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 px-6 py-2.5 rounded-lg font-medium transition">
+              <a
+                href={resume}
+                // download={resume}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 px-6 py-2.5 rounded-lg font-medium transition"
+              >
                 <TbFileDownload size={20} />
                 Resume
-              </button>
+              </a>
 
               <a
                 href="mailto:ojarafavour@yahoo.com"
                 className="flex items-center gap-2 bg-white text-black hover:bg-slate-100 px-6 py-2.5 rounded-lg font-medium transition"
               >
                 <MdOutlineMail size={20} />
-                Email me
+                Contact me
               </a>
             </div>
           </div>
@@ -70,27 +80,26 @@ const Home = () => {
 
               <p className="text-lg leading-relaxed text-[#94A3B8] mb-1.5">
                 I’m a frontend developer with a B.Sc. in Computer Science and
-                over 1.5 years of experience building modern web applications
-                with React. I enjoy turning complex requirements into clean,
+                over 2 years of experience building modern web applications with
+                React. I enjoy turning complex requirements into clean,
                 functional, and scalable user interfaces.
               </p>
 
               <p className="text-lg leading-relaxed text-[#94A3B8] mb-1.5">
-                I’m constantly improving my craft by building functional
+                I am constantly improving my craft by building functional
                 projects, integrating APIs, and refining how I structure and
                 reason about frontend applications.
               </p>
 
               <p className="text-lg leading-relaxed text-[#94A3B8]">
-                My core technologies are: React, TypeScript, Firebase, Tailwind
-                CSS.
+                My core technologies are: React.js, TypeScript, Next.js,
+                Firebase, Redux ToolKit, Tailwind CSS.
               </p>
             </section>
           </div>
 
           <div className="space-y-8">
             <div className="glass-card p-6 space-y-6">
-            
               <div>
                 <h4 className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-2">
                   Email
@@ -102,6 +111,13 @@ const Home = () => {
                 >
                   ojarafavour@yahoo.com
                 </a>
+              </div>
+
+              <div>
+                <h4 className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-2">
+                  Location
+                </h4>
+                <p className="text-sm font-medium">(GMT+1)</p>
               </div>
 
               <div className="pt-4 border-t border-white/5">
@@ -139,7 +155,7 @@ const Home = () => {
           </div>
         </div>
 
-        <ProjectsSection/>
+        <ProjectsSection />
 
         <section id="experience" className="mb-20">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-blue-400 mb-8">
@@ -176,12 +192,10 @@ const Home = () => {
           </div>
         </section>
 
-       <Footer/>
+        <Footer />
       </main>
     </div>
   );
 };
 
 export default Home;
-
-

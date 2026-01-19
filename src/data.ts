@@ -7,6 +7,7 @@ export const projects = [
     stack: ["React + TypeScript", "Tailwind CSS", "Firebase"],
     gitHub: "https://github.com/ojaraa/reserva",
     projectLink: "https://reserva-kappa.vercel.app",
+    status: "In Progress",
   },
   {
     title: "Movie Discovery (TMDB)",
@@ -49,7 +50,7 @@ export const experience = [
   {
     role: "Frontend Developer",
     company: "Freelance",
-    location: "Lagos, Nigeria",
+    // location: "Lagos, Nigeria",
     startDate: "Oct 2025",
     endDate: "Present",
     description: "",
@@ -68,7 +69,7 @@ export const experience = [
   {
     role: "Frontend Developer Intern",
     company: "Ainnov8 Technologies",
-    location: "Lagos Nigeria",
+    // location: "Lagos Nigeria",
     startDate: "Jan 2022",
     endDate: "Jan 2023",
     description: "",
