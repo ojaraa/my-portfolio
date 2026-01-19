@@ -36,9 +36,9 @@ const Home = () => {
               <div>
                 <h1
                   className="text-4xl font-bold tracking-tight"
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeIn" }}
+                //   initial={{ opacity: 0, y: -20 }}
+                //   animate={{ opacity: 1, y: 0 }}
+                //   transition={{ duration: 0.8, ease: "easeIn" }}
                 >
                   Okereke Favour Ojara
                 </h1>
