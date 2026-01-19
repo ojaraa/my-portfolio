@@ -22,8 +22,11 @@ const Projects = () => {
             MY PROJECTS
           </h2>
           <div className="flex justify-between items-end mt-8 mb-4">
-            <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-blue-400">
-            <FaArrowLeft/>
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-blue-400"
+            >
+              <FaArrowLeft />
               back
             </Link>
           </div>
@@ -40,7 +43,25 @@ const Projects = () => {
 
                 <div className="p-5">
                   <div className="flex justify-between items-center pt-3">
-                    <h3 className="font-bold mb-1 text-xl">{project?.title}</h3>
+                    <a
+                      target="_blank"
+                      href={project?.projectLink}
+                      rel="noopener noreferrer"
+                      className="inline-flex  items-center"
+                    >
+                      <h3 className="font-bold mb-1 text-xl mr-1.5">
+                        {project?.title}
+                      </h3>
+                      {project.status && (
+                        <div className="inline-flex gap-1.5 items-center">
+                          <span className="text-green-500">•</span>
+
+                          <span className="text-green-500 text-xs">
+                            {project.status}
+                          </span>
+                        </div>
+                      )}
+                    </a>
                     <div className="flex items-center gap-3 my-2">
                       <a
                         href={project.gitHub}
