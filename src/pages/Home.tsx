@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import ProjectsSection from "../components/ProjectsSection";
 import { experience } from "../data";
 import resume from "/Okereke_Favour_Ojara_Resume.pdf";
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
 
 const Home = () => {
   return (
@@ -34,14 +34,14 @@ const Home = () => {
                 </div>
               </div>
               <div>
-                <motion.h1
+                <h1
                   className="text-4xl font-bold tracking-tight"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: "easeIn" }}
                 >
                   Okereke Favour Ojara
-                </motion.h1>
+                </h1>
                 <p className="text-xl text-[#94A3B8] mt-1">
                   Frontend Developer
                 </p>
